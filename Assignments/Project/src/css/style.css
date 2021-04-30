@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(238, 238, 238);
+}
+.nav {
+  background-color: white;
+}
+
+.nav a {
+  color: rgb(83, 175, 255);
+  font-size: 20px;
+}
+
+.nav h4,
+h1 {
+  color: darkcyan;
+  font-weight: 700;
+}
+
+footer {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+
+.booking_box {
+  background-color: white;
+  box-shadow: 0 0 52px -5px gainsboro;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background-color: rgb(83, 175, 255);
+  border: none;
+}
+
+.normalview {
+  min-height: 50vh;
+}
+
+.middleview {
+  min-height: 70vh;
+}
