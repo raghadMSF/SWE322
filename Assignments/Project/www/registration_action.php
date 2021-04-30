@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       echo '<div class="alert alert-warning" role="alert">email must be in a valid format</div>';
   } else {
     // prepare and bind
-    $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO user_account (username, email, password) VALUES (?, ?, ?)");
     $stmt->bind_param("sss", $username,$email,$password);
     // set parameters and execute
     $username = $usernameField;
