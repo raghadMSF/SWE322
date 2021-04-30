@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(empty($password) || empty($username)){
         echo '<div class="alert alert-warning" role="alert"> password or username is empty</div>';
     }else{
-        $sql = "SELECT * FROM users WHERE username = '$username'";
+        $sql = "SELECT * FROM user_account WHERE username = '$username'";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
